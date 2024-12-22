@@ -11,7 +11,6 @@ import Rates from "../pages/Rates";
 import Report from "../pages/Report";
 import Settings from "../pages/Settings";
 import Login from "../components/Login";
-import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +19,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <PrivateRoute ><Main /></PrivateRoute>,
+    element:<Main />,
     children: [
         { 
             path: "/",
